@@ -1,0 +1,73 @@
+<%- include('./partials/head') %>
+    <link rel="stylesheet" type="text/css" href="/css/cargaProductos.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header') %>
+    </body>
+
+    <main>
+        <div class="container">
+            <div class="der-card">
+              <form action="/peliculas/edit/<%= pelicula.id %>" method="POST" >
+                <h2>Editar pelicula</h2>
+                <div class="input-group">
+                  <label for="titulo">Titulo</label>
+                  <input type="text" id="titulo" name="titulo" value="<%= pelicula.titulo %>">
+                  <% if (locals.errors && errors.titulo) { %>  
+                    <p style="color: red;">
+                     <%= errors.titulo.msg %>
+                    </p>
+                   <% } %>
+                </div>
+                <div class="input-group">
+                  <label for="trailer">Trailer URL</label>
+                  <input type="text" id="trailer" name="trailer" value="<%= pelicula.trailer %>">
+                  <% if (locals.errors && errors.trailer) { %>  
+                    <p style="color: red;">
+                     <%= errors.trailer.msg %>
+                    </p>
+                   <% } %>
+                </div>
+                <div class="input-group">
+                  <label for="anio">Año</label>
+                  <input type="text" id="anio" name="anio" value="<%= pelicula.anio %>">
+                  <% if (locals.errors && errors.anio) { %>  
+                    <p style="color: red;">
+                     <%= errors.anio.msg %>
+                    </p>
+                   <% } %>
+                </div>
+                <div class="input-group">
+                  <label for="categoria">Categoria</label>
+                  <select name="categoria" id="categoria">
+                    <% for (let i= 0; i < categorias.length; i++){ %>
+                      <option value="<%= categorias[i].id %>">
+                        <%= categorias[i].nombre %>
+                      </option>
+                    <% } %> 
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="descripcion">Descripcion</label>
+                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" ><%= pelicula.descripcion %></textarea>
+                  <% if (locals.errors && errors.descripcion) { %>  
+                    <p style="color: red;">
+                     <%= errors.descripcion.msg %>
+                    </p>
+                   <% } %>
+                </div>
+                <div class="input-group">
+                  <label for="imagen">
+                    <span>Imagen de portada</span>
+                  </label>
+                  <input type="file" id="imagen" name="imagen" value="<%= pelicula.imagen %>">
+                </div>
+                <a href="/" class="cancel-btn" >Cancelar</a>
+                <button type="submit">Editar</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    <%- include('./partials/footer') %>
+</html> 
