@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+.logo{
+  width: 20%;
+  margin: 10px;
+  position: relative;
+}
+
+nav img {
+  max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 125px;
+}
+
+nav input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 14px;
+}
+
+.botones-nav{
+    width: 25%;
+    margin: 10px;
+}
+
+.botones-nav a{
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+.botones-usuario{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
+
+.botones-usuario a{
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.register, .login{
+    color: white;
+    text-align: center;
+}
+
+.boton-nav:hover{
+    background-color: #306d33;
+    transition-duration: 500ms;
+}
+
+.fa-solid{
+    position: relative;
+    bottom: 5px;
+  }
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.portada{
+    display: none;
+    width: 100%;
+}
+
+.portada-pelicula {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.boton-editar {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .boton-editar:hover {
+    background-color: #164564;
+  }
+
+  .boton-borrar{
+    display: block;
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition-duration: 500ms;
+  }
+
+  .boton-borrar:hover {
+    background-color: #7e1e27;
+    transition-duration: 500ms;
+  }
+
+.card-sinopsis {
+    width: 40%;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.form-container {
+    display: flex;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.form-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add-producto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+
+  .add-producto:hover {
+    background-color: #1d5981;
+    transition-duration: 500ms;
+  }
+
+.filtros-izq {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-right: 10px;
+}
+.filtros-izq ul{
+    list-style-type: none;
+}
+.filtros-izq li{
+    margin-left: -40px;
+}
+.filtros-izq a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.contenido {
+    padding: 10px;
+    width: 100%;
+}
+
+.listaDeUsuarios{
+    display: block;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.boton-borrar{
+    display: block;
+    background-color: #dc3545;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition-duration: 500ms;
+}
+
+.oppenheimer{
+    transition: transform 0.3s;
+}
+
+.oppenheimer:hover{
+    display: flex;
+    transform: scale(1.1);
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tituloPeli{
+    display: flex;
+    font-weight: bold;
+    background-color: #333;
+    color: #ffffff;
+    height: fit-content;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.tarjeta {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 270px;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.tarjeta:hover .tituloPeli{
+    opacity: 0.8;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i{
+    margin: 40px;
+}
+
+/* celular */
+@media (min-width: 450px){
+
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filtros-izq {
+        display: none;
+        text-decoration: none;
+    }
+
+    .tarjeta{
+        width: 20%;
+    }
+}
+
+@media (min-width: 750px){
+
+    .botones-nav{
+        display: flex;
+    }
+
+    .botones-nav button{
+        width: 30%;
+    }
+
+    main{
+        display: flex;
+    }
+    .filtros-izq {
+        display: block;
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .filtros-izq li{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .tarjeta{
+        width: 15%;
+    }
+}
